@@ -6,6 +6,7 @@ const emailButton = document.getElementById('check-email')
 const password = document.getElementById('password')
 const passwordCheck = document.getElementById('password-retype')
 
+
 function getEmail() {
 
   // Récupère les valeurs des inputs //
@@ -34,7 +35,7 @@ function getEmail() {
     // Fin construction de la boite d'erreur //
   } else { // Si les valeurs email existent
 
-    //!Important! REGEX A REVOIR APRES MIDI//
+    // REGEX //
     const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const emailRegExp = document.getElementById('errorEmailNotValid')
     if (emailValue.match(mailformat) && emailCheckValue.match(mailformat)) {
@@ -56,7 +57,7 @@ function getEmail() {
         console.log("cet element existe déjà")
       }
     }
-    //!Important! REGEX A REVOIR APRES MIDI CI-DESSUS //
+    // FIN REGEX //
     const errorElementEmpty = document.getElementById('errorEmailEmpty')
     if (errorElementEmpty) { // Si la boite erreur existe
       errorElementEmpty.remove()
@@ -85,4 +86,10 @@ function getEmail() {
     console.log('aaaaaaaaaaaa')
     console.log(email, emailCheck, emailButton)
   }
+}
+
+function submit() {
+  if(getEmail()==true) {
+    console.log("Salut à tous")
+  } else {console.log("OTARIE DES EAUX")}
 }
