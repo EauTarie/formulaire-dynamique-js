@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<header>
+  <section>
+    <img src="assets/logo_anssi.png" alt="Logo de l'Anssi">
+    <h1>anssi</h1>
+    <p>Agence nationale de la sécurité des systèmes d'information</p>
+  </section>
+  <nav>
+    <ul>
+      <li><a href=""><img src="/assets/linkedin.svg" alt="lien vers linkedin"></a></li>
+      <li><a href=""><img src="/assets/dailymotion.png" alt="lien vers dailymotion"></a></li>
+      <li><a href=""><img src="/assets/twitter.svg" alt="lien vers twitter"></a></li>
+      <li><a href=""><img src="/assets/github.png" alt="lien vers github"></a></li>
+      <li><a href=""><img src="/assets/soundcloud.png" alt="lien vers soundcloud"></a></li>
+      <li><a href="">déclaration vulnérabilité</a></li>
+      <li><a href="">en cas d'incident</a></li>
+      <li><a href=""><span>alerte</span></a></li>
+      <li><a href="">presse</a></li>
+      <li><a href="">recrutement</a></li>
+      <li><a href=""><img src="/assets/flag_en_icon.png" alt="lien vers la page en anglaise. link to the english page"></a></li>
+    </ul>
+  </nav>
+</header>
+  <section class="banner">
+    <ul>
+      <li><a href=""><img src="/assets/administration_icon.png" alt="lein vers la page administration du gouvernement"></a></li>
+      <li><a href="">principales menaces</a></li>
+      <li><a href="">réglementation</a></li>
+      <li><a href="">visa de sécurité</a></li>
+      <li><a href="">bonnes pratiques</a></li>
+      <li><a href="">services sécurisés</a></li>
+      <li><a href="">formation</a></li>
+      <li><a href="">management du risque</a></li>
+      <li><a href="">glossaire</a></li>
+    </ul>
+  </section>
+  <!-- se renseigner sur le menu déroulant sur le site de l'ansi, lors du passage de la souris sur chacuns des li ci-dessus -->
+  <main>
+    <section class="directory">
+      <ul>
+        <li><a href="">adminsitration</a></li>
+        <li><a href="">précautions élémentaires</a></li>
+        <li><ah href="">calculer la "force" d'un mot de passe</a></li>
+      </ul>
+    </section>
+    <section class="title">
+      <h1>calculer la <span>"force"</span> d'un mot de passe</h1>
+      <hr class="small-violet">
+    </section>
+    <section class="content">
+      <div class="sharing">
+        <ul>
+          <li><button>imprimez</button></li>
+          <li><button><img src="/assets/share.png" alt="partagez cet article"></button></li>
+        </ul>
+      </div>
+      <!-- A voir ce week end pour intégrer l'article de l'ansi à partir du content -->
+    </section>
+
+    <section class="form">
+      <h1>Ceci n'est pas un vrai formulaire d'inscription. Seulement un formulaire à but pédagogique. <span class="red">Ne renseignez pas de vraies coordonnées !</span></h1>
+      <!-- <form class="inscription" method="" action="script.js"> -->
+        <div id="form-email">
+          <label for="email">email</label>
+          <input type="email" id="email" name="email">
+          <label for="email-retype">saisissez à nouveau votre email</label>
+          <input type="email" id="email-retype" name="email-retype">
+          <button id="check-email" onclick="getEmail()">vérifier</button>
+        </div>
+        <div id="form-password">
+          <label for="password">mot de passe</label>
+          <input onchange="getPassword()" type="password" id="password" name="password">
+          <label for="password-retype">saisissez à nouveau votre mot de passe</label>
+          <input onchange="getPassword()" type="password" id="password-retype" name="password-retype">
+        </div>
+        <button onclick="submit()" class="submit">envoyez</button>
+      <!-- </form>  -->
+    </section>
+  </main>
+  <script src="script.js"></script>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
